@@ -1,0 +1,44 @@
+@use "variables" as c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 5px 5px;
+}
+div {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid c.$colorred;
+  h1 {
+    color: c.$colorgreen;
+    text-decoration: underline c.$colorblue;
+  }
+  section {
+    display: flex;
+  }
+
+  article {
+    border: 2px solid c.$colorgreen;
+    height: 150px;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  article:nth-child(odd) {
+    color: c.$colorblue;
+  }
+  article:nth-child(even) {
+    color: c.$colorred;
+  }
+}
